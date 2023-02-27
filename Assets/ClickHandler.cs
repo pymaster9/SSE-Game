@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class ClickHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject affecting;
+    public string function;
+    private void OnMouseEnter()
     {
-        
+        GetComponent<SpriteRenderer>().color = new Color(0, 0.74f, 0.78f);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnMouseExit()
     {
-        
+        GetComponent<SpriteRenderer>().color = new Color(0, 0.42f, 0.78f);
+    }
+    private void OnMouseDown()
+    {
+        print("Down");
+        affecting.GetComponent<QuestionChooser>().Invoke(function, 0.0f);
     }
 }
