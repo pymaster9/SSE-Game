@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class QuestionChooser : MonoBehaviour
 {
+    public int points;
+
     public TextMesh text;
     public List<string> questions;
     public List<string> answer1;
@@ -44,6 +46,7 @@ public class QuestionChooser : MonoBehaviour
             ans4text.text = answer4[index];
             answer = answers[index];
             hint.hint = hints[index];
+            hint.used = false;
 
             //remove the question
             questions.Remove(questions[index]);
@@ -56,7 +59,8 @@ public class QuestionChooser : MonoBehaviour
         }
         catch
         {
-            GameManager.points += 1;
+            GameManager.points += points;
+            GameManager.home.GetComponent<GameManager>().BacktoMap(gameObject);
         }
 
     }

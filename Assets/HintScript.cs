@@ -6,6 +6,7 @@ public class HintScript : MonoBehaviour
 {
     public string hint;
     public GameObject question;
+    public bool used;
     private void OnMouseEnter()
     {
         GetComponent<SpriteRenderer>().color = new Color(0, 0.74f, 0.78f);
@@ -16,7 +17,11 @@ public class HintScript : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        question.GetComponent<TextMesh>().text = hint;
-        GameManager.points -= 1;
+        if (!used)
+        {
+            question.GetComponent<TextMesh>().text = hint;
+            GameManager.points -= 1;
+            used = true;
+        }
     }
 }

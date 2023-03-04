@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject map;
     public static int points;
-    // Start is called before the first frame update
-    void Start()
+    public static GameObject home;
+    private void Awake()
     {
-        
+        home = gameObject;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Waypoint(GameObject swapto)
     {
-        
+        map.transform.position = new Vector3(200, 0, 0);
+        swapto.transform.position = new Vector3(0, 0, 0);
+    }
+    public void BacktoMap(GameObject from)
+    {
+        Destroy(from);
+        map.transform.position = new Vector3(0, 0, 0);
     }
 }
