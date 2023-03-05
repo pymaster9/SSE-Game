@@ -1,0 +1,12 @@
+1. Turn it into an escape room - DONE(For Now)
+    a. Make it so you can end early
+        i. Only require a few sets of questions to unlock, but you can do more questions for more points.
+    b. Add in points for all remaining seconds you have
+
+
+2. Make it look nicer
+3. Optimize for 4K
+4. Add All the Questions
+5. More Music
+6. Add Questions
+7. Export

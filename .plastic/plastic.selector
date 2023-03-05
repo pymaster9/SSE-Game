@@ -1,0 +1,4 @@
+repository "SSE Game@Cygnus77@cloud"
+  path "/"
+    br "/main"
+    co "/main"

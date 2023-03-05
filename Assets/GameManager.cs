@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour
     {
         home = gameObject;
     }
-    public void Waypoint(GameObject swapto)
+    public void Waypoint(GameObject goingfrom, GameObject swapto)
     {
-        map.transform.position = new Vector3(200, 0, 0);
+        goingfrom.transform.position = new Vector3(200, 0, 0);
         swapto.transform.position = new Vector3(0, 0, 0);
     }
     public void BacktoMap(GameObject from)
