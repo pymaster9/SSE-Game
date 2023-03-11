@@ -5,7 +5,14 @@
 
 
 2. Make it look nicer
-3. Optimize for 4K
+    a. Make the map look nicer - DONE
+    b. Make the LeaveScreen Look nicer - DONE
+    c. Make the paragraphs look nicer - DONE
+    d. FONTS
+    e. Make the questions look nicer
+
+
+3. Optimize for 4K - DONE
 4. Add All the Questions
 5. More Music
 6. Add Questions

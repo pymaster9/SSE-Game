@@ -11,6 +11,7 @@ public class PortalScript : MonoBehaviour
     public TextMeshProUGUI codetext;
     private void OnMouseDown()
     {
+        gameObject.active = false;
         codeobj.active = true;
     }
     public void CheckCode()
