@@ -21,7 +21,7 @@ public class PreviewScript : MonoBehaviour
         }
         if (active)
         {
-            GetComponent<TextMesh>().color = new Color(0, 0, 0, GetComponent<TextMesh>().color.a - 3*Time.deltaTime);
+            GetComponent<TextMesh>().color = new Color(0, 0, 0, GetComponent<TextMesh>().color.a - 1.9f*Time.deltaTime);
         }
         if (GetComponent<TextMesh>().color.a <= 0.01f)
         {

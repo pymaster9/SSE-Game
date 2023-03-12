@@ -6,9 +6,14 @@ public class CorrectAnswer : MonoBehaviour
 {
     public int points;
     public GameObject goingto;
+    public bool done;
     private void OnMouseDown()
     {
-        GameManager.points += points;
+        if (!done)
+        {
+            GameManager.points += points;
+            done = true;
+        }
         GameManager.home.GetComponent<GameManager>().Waypoint(gameObject.transform.parent.gameObject, goingto);
     }
 }
