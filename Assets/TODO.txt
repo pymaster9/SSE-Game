@@ -8,12 +8,22 @@
     a. Make the map look nicer - DONE
     b. Make the LeaveScreen Look nicer - DONE
     c. Make the paragraphs look nicer - DONE
-    d. FONTS
+    d. FONTS - DONE
     e. Make the questions look nicer
 
 
 3. Optimize for 4K - DONE
 4. Add All the Questions
+    a. Ugadi - DONE
+    b. Vishu
+    c. Puthandu
+    d. Cheti Chand
+    e. Baisakhi
+    f. Bestu Varas
+    g. Gudi Padwa
+    h. Bihu - DONE
+    i. Navroz
+    j. Pohela Boishakh
+    h. Pana Sankranti
 5. More Music
-6. Add Questions
-7. Export
+6. Export

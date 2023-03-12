@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         home = gameObject;
+        points = 0;
     }
     public void Waypoint(GameObject goingfrom, GameObject swapto)
     {
